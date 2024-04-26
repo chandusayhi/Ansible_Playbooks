@@ -3,5 +3,5 @@
   tasks:
     - name: clone the git repo
       git:
-        repo: https://chandusayhi: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@github.com/chandusayhi/Demo_Pull.git
+        repo: https://chandusayhi:password@github.com/chandusayhi/Demo_Pull.git
         dest: /home/ubuntu/clonerepo 
