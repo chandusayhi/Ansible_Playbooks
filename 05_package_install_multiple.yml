@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:  
+    - name: Install multiple package
+      apt:
+        name: [git, maven, wget]
+        state: present

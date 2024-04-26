@@ -1,0 +1,15 @@
+---
+- hosts: all
+  tasks:
+    - name: Install git in ubuntu
+      apt:
+        name: [git, maven, wget]
+        state: present
+        update_cache: yes
+      when: ansible_distribution == "Ubuntu"
+    - name: Install git in centos
+      yum:
+        name: [git, maven, wget ]
+        state: present
+        update_cache: yes
+      when: ansible_distribution == "centos"

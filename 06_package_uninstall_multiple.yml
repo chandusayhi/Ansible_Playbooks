@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+    - name: uninstall the package
+      apt:
+        name: [git, maven, wget]
+        state: absent

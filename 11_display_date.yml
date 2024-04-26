@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+    - name: to display the date
+      shell: date '+%D'
+      register: lc_date
+    - debug:
+        var: lc_date.stdout_lines
+      

@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+    - name: copy content to file
+      copy: content="This is demo to add content to file" dest=/home/ubuntu/hello.txt
